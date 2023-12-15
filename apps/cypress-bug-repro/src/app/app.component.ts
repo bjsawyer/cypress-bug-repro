@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { utilText } from '@cypress-bug-repro/utils';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
   selector: 'cypress-bug-repro-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'cypress-bug-repro';
+  utilText = utilText;
 }
